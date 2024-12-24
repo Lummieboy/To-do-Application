@@ -4,12 +4,14 @@ import { Home } from './routes/Home'
 import { NotFound } from './routes/NotFound'
 import { Todos } from './routes/Todos'
 
+
 function App() {
 // Whats Left is the pagination
     return (
         <main>
+
             <Routes>
-                <Route path='/home' element={<Home />}>
+                <Route path='/' element={<Home />}>
                     <Route path=':id' element={<Todos />} />
                 </Route>
 
